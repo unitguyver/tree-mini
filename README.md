@@ -1,2 +1,4 @@
-# tree-mini
-成长树小程序
+# 成长树原生小程序
+```
+https://github.com/unitguyver/tree-mini.git
+```

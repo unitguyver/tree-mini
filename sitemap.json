@@ -1,0 +1,9 @@
+{
+  "desc": "成长树",
+  "rules": [
+    {
+      "action": "allow",
+      "page": "*"
+    }
+  ]
+}
