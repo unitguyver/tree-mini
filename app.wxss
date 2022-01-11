@@ -22,3 +22,14 @@ image{
   width: 100%;
   height: 100%;
 }
+
+button{
+  width: auto;
+  color: #333333;
+  font-size: 32rpx;
+  font-weight: 400;
+}
+
+button:not([size=mini]){
+  width: auto;
+}
