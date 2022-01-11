@@ -1,5 +1,4 @@
 // app.js
-import query from "./utils/query";
 
 App({
   /**
@@ -8,7 +7,6 @@ App({
   onLaunch() {
     // 
   },
-  query,
   /**
    * 页面跳转
    * @param {url:string} 跳转到地址

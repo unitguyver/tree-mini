@@ -1,3 +1,4 @@
+import api from "../../api/index";
 const app = getApp()
 
 Page({
@@ -17,9 +18,7 @@ Page({
     wx.login({
       success: (res) =>{
         if(res.code){
-          app.query({
-            url: '/fake/app/getPhone'
-          }).then(({phone}) => {
+          api.getPhone().then(({phone}) => {
             this.setData({
               phone: phone
             })
@@ -30,9 +29,7 @@ Page({
   },
 
   getCode(){
-    app.query({
-      url: "/fake/app/getCode"
-    }).then(({code}) => {
+    api.getCode().then(({code}) => {
       wx.showToast({
         title: code, duration: 2000, icon: 'none'
       })
@@ -40,8 +37,7 @@ Page({
   },
 
   login(){
-    app.query({
-      url: "/fake/app/login",
+    api.login({
       data: {
         phone: this.data.phone,
         role: 'master',

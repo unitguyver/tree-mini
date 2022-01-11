@@ -23,13 +23,13 @@ image{
   height: 100%;
 }
 
-button{
+page button{
   width: auto;
   color: #333333;
   font-size: 32rpx;
   font-weight: 400;
 }
 
-button:not([size=mini]){
+page button:not([size=mini]){
   width: auto;
 }
