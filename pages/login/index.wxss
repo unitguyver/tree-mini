@@ -1,0 +1,47 @@
+/**index.wxss**/
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 40rpx 0;
+}
+
+.logo{
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.login-form{
+  width: 100%;
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 60rpx;
+}
+
+.form-item,
+.form-controls{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #333333;
+}
+
+.form-item .input{
+  width: 1px;
+  flex-grow: 1;
+}
+
+.input input{
+  width: 100%;
+}
+
+.form-controls{
+  border: none;
+}

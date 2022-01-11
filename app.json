@@ -1,11 +1,13 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/login/index",
+    "pages/master/home/index",
+    "pages/teacher/home/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "智慧树",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",

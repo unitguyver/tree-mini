@@ -11,23 +11,31 @@ App({
   query,
   /**
    * 页面跳转
-   * @param {opt.url} 跳转到地址
-   * @param {opt.params} 路由参数 
+   * @param {url:string} 跳转到地址
+   * @param {params:object} 路由参数 
    */
-  navigateTo(opt) {
-    let params = "";
-    if (opt.params) {
-      for (let key in opt.params) {
-        params += params ? "&" : "?";
-        params += key + "=" + opt.params[key];
+  push(url, params = null) {
+    url = `/pages${url}/index`;
+    if (params) {
+      let suffix = '';
+      for (let key in params) {
+        suffix += suffix ? "&" : "?";
+        suffix += key + "=" + params[key];
       }
+      url += suffix;
     }
-    wx.navigateTo({
-      url: opt.url + params,
-    })
+    console.log(url)
+    wx.navigateTo({url})
   },
   globalData: {
     role: "",//校长:master|家长:parent|教师:teacher|教务:admin
     userInfo: null
+  },
+  dbset(key, value){
+    wx.setStorageSync(key, value);
+    this.globalData[key] = value;
+  },
+  dbget(key){
+    return wx.getStorageSync(key);
   }
 })

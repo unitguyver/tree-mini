@@ -1,3 +1,5 @@
+import fake from "../fake/index";
+
 /**
  * app.query - 网络请求的封装
  * @param {queryData:object}
@@ -11,10 +13,25 @@ export default function query(queryData = {
     'content-type': 'application/json'
   },
 } = {}){
+  const {url} = queryData;
   if(/^https?\:\/\//.test(url)){
     // 绝对地址
   }else{
     // 相对地址、需要拼接地址头部
+
+    // 假数据
+    if(/^\/fake/.test(url)){
+      return new Promise((resolve, reject) => {
+        if(fake[url]){
+          const data = fake[url](queryData);
+          resolve(data);
+        }else{
+          reject({
+            code: -1, data: null, msg: '网路连接失败'
+          })
+        }
+      })
+    }
   }
 
   return new Promise((resolve, reject) => {
