@@ -1,0 +1,1 @@
+<view class="tree">角色：{{role}}</view>

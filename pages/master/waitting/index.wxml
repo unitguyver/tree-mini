@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="content">
+    <view class="switch"></view>
+    <view class="search"></view>
+    <scroll-view class="students"></scroll-view>
+  </view>
+  <view class="footer">北京两个黄鹂教育科技有限公司</view>
+</view>

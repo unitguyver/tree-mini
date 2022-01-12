@@ -23,6 +23,10 @@ image{
   height: 100%;
 }
 
+view{
+  box-sizing: border-box;
+}
+
 page button{
   width: auto;
   color: #333333;
@@ -32,4 +36,15 @@ page button{
 
 page button:not([size=mini]){
   width: auto;
+}
+
+.nav{
+  width: 100%;
+  position: relative;
+  z-index: 999;
+  flex-shrink: 0;
+}
+
+.menu{
+  width: 100%;
 }

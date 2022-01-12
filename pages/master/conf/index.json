@@ -1,6 +1,6 @@
 {
   "usingComponents": {
     "nav": "../../../components/nav",
-    "card": "../../../components/card"
+    "menu": "../../../components/menu"
   }
 }

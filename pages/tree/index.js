@@ -1,5 +1,4 @@
-// pages/master/home/index.js
-import api from "../../../api/index";
+// pages/tree/index.js
 const app = getApp();
 
 Page({
@@ -8,25 +7,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userInfo: app.globalData.userInfo,
-    statistics: {
-      admin: 10,
-      teacher: 10,
-      class: 10,
-      student: 30
-    },
-    cards: []
+    role: app.globalData.role
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    api.getMasterCards().then(response =>{
-      this.setData({
-        cards: response.data
-      })
-    })
+
   },
 
   /**

@@ -1,4 +1,4 @@
-// components/growth-tree/index.js
+// components/card/index.js
 Component({
   /**
    * 组件的属性列表

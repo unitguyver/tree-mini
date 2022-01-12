@@ -2,7 +2,10 @@
   "pages": [
     "pages/login/index",
     "pages/master/home/index",
-    "pages/teacher/home/index"
+    "pages/teacher/home/index",
+    "pages/master/conf/index",
+    "pages/tree/index",
+    "pages/master/waitting/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

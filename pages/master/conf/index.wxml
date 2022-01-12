@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="content">
+    <view class="header">
+      <view class="avater">
+        <image src="{{userInfo.avater}}"></image>
+      </view>
+      <button>编辑</button>
+    </view>
+    <menu class="menu"  menus="{{menus}}" />
+  </view>
+  <nav class="nav" tree="{{true}}" home="/master/home" conf="/master/conf" />
+</view>

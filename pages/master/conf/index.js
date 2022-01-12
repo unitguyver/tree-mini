@@ -1,6 +1,5 @@
-// pages/master/home/index.js
-import api from "../../../api/index";
-const app = getApp();
+// pages/master/conf/index.js
+const app = getApp()
 
 Page({
 
@@ -9,24 +8,37 @@ Page({
    */
   data: {
     userInfo: app.globalData.userInfo,
-    statistics: {
-      admin: 10,
-      teacher: 10,
-      class: 10,
-      student: 30
-    },
-    cards: []
+    menus: [
+      {
+        icon: "/static/images/app/logo.jpeg",
+        label: "班级列表",
+        path: ""
+      },
+      {
+        icon: "/static/images/app/logo.jpeg",
+        label: "老师列表",
+        path: ""
+      },
+      {
+        icon: "/static/images/app/logo.jpeg",
+        label: "学院列表",
+        path: ""
+      },
+      {
+        icon: "/static/images/app/logo.jpeg",
+        label: "待试听学员",
+        path: ""
+      },
+      null,
+      null
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    api.getMasterCards().then(response =>{
-      this.setData({
-        cards: response.data
-      })
-    })
+
   },
 
   /**

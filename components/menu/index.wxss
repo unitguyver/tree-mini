@@ -1,0 +1,28 @@
+/* components/menu/index.wxss */
+.menu-list{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20rpx;
+}
+
+.menu-item{
+  width: 216rpx;
+  height: 216rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10rpx;
+}
+
+.menu-item.abled{
+  box-shadow: 0 10rpx 10rpx #333333;
+}
+
+.icon{
+  width: 160rpx;
+  height: 160rpx;
+}

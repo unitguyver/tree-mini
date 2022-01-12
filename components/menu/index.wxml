@@ -1,0 +1,11 @@
+<view class="menu-list">
+<block wx:for="{{menus}}">
+  <view class="menu-item abled" wx:if="{{item}}"  wx:key="index" data-path="{{item.path}}" bind:tap="onMenuTap">
+    <view class="icon">
+      <image src="{{item.icon}}"></image>
+    </view>
+    <view class="label">{{item.label}}</view>
+  </view>
+  <view class="menu-item" wx:else="{{item}}"></view>
+</block>
+</view>

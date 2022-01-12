@@ -1,2 +1,36 @@
-<!--pages/master/home/index.wxml-->
-<text>pages/master/home/index.wxml</text>
+<view class="container">
+  <scroll-view class="content">
+    <view class="header-wrapper">
+      <view class="header">
+        <view class="avater">
+          <image src="{{userInfo.avater}}"></image>
+        </view>
+        <view class="info">
+          <view class="school">{{userInfo.school}}</view>
+          <view class="name">{{userInfo.name}}</view>
+          <view class="date">{{date}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="statistics">
+      <view class="item">
+        <view class="number">{{statistics.admin}}</view>
+        <view class="describe">教务数量</view>
+      </view>
+      <view class="item">
+        <view class="number">{{statistics.teacher}}</view>
+        <view class="describe">老师数量</view>
+      </view>
+      <view class="item">
+        <view class="number">{{statistics.class}}</view>
+        <view class="describe">班级数量</view>
+      </view>
+      <view class="item">
+        <view class="number">{{statistics.student}}</view>
+        <view class="describe">学生数量</view>
+      </view>
+    </view>
+    <card cards="{{cards}}"/>
+  </scroll-view>
+  <nav class="nav" tree="{{true}}" home="/master/home" conf="/master/conf" />
+</view>

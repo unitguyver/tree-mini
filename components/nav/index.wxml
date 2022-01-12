@@ -1,0 +1,5 @@
+<view class="nav-list">
+  <view class="home" bind:tap="goHome">首页</view>
+  <view class="tree" bind:tap="openTree" wx:if="{{tree}}">成长树</view>
+  <view class="conf" bind:tap="goConf">我的</view>
+</view>

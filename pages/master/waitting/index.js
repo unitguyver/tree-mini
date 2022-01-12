@@ -1,32 +1,18 @@
-// pages/master/home/index.js
-import api from "../../../api/index";
-const app = getApp();
-
+// pages/master/waitting/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo: app.globalData.userInfo,
-    statistics: {
-      admin: 10,
-      teacher: 10,
-      class: 10,
-      student: 30
-    },
-    cards: []
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    api.getMasterCards().then(response =>{
-      this.setData({
-        cards: response.data
-      })
-    })
+
   },
 
   /**
